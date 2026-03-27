@@ -3,169 +3,538 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPX Buddy - Terms and Conditions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f7;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: white;
-            min-height: 100vh;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #e5e5e7;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            font-weight: 600;
-            color: #1d1d1f;
-            margin-bottom: 10px;
-        }
-        
-        .app-name {
-            color: #007aff;
-        }
-        
-        .last-updated {
-            color: #86868b;
-            font-size: 0.9em;
-        }
-        
-        h2 {
-            font-size: 1.5em;
-            font-weight: 600;
-            color: #1d1d1f;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            color: #424245;
-        }
-        
-        ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-            color: #424245;
-        }
-        
-        .contact {
-            background-color: #f5f5f7;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 40px;
-        }
-        
-        a {
-            color: #007aff;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid #e5e5e7;
-            color: #86868b;
-            font-size: 0.9em;
-        }
-        
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            
-            h2 {
-                font-size: 1.3em;
-            }
-        }
-    </style>
+    <title>GPX Buddy - Help & Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="support.css">
 </head>
 <body>
     <div class="container">
+
+        <!-- Header -->
         <header>
             <h1><span class="app-name">GPX Buddy</span></h1>
-            <p>Terms and Conditions</p>
-            <p class="last-updated">Last updated: February 12, 2026</p>
+            <p>Help &amp; Support</p>
+            <p class="last-updated">Everything you need to get the most out of your workouts</p>
         </header>
 
-        <section>
-            <h2>1. Acceptance of Terms</h2>
-            <p>By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.</p>
-        </section>
+        <!-- Layout: sidebar + main -->
+        <div class="support-layout">
 
-        <section>
-            <h2>2. Use License</h2>
-            <p>Permission is granted to temporarily download one copy of the application for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
-            <ul>
-                <li>Modify or copy the application materials</li>
-                <li>Use the materials for any commercial purpose or for any public display</li>
-                <li>Attempt to reverse engineer any software contained in the application</li>
-                <li>Remove any copyright or other proprietary notations from the materials</li>
-            </ul>
-        </section>
+            <!-- Sidebar nav -->
+            <aside class="sidebar">
+                <p class="sidebar-title">Jump to</p>
+                <nav id="sidebar-nav">
+                    <a href="#workout-list"><span class="nav-icon">📋</span>Your Workout List</a>
+                    <a href="#importing"><span class="nav-icon">❤️</span>Importing from Health</a>
+                    <a href="#map-view"><span class="nav-icon">🗺️</span>Viewing on the Map</a>
+                    <a href="#search-filter"><span class="nav-icon">🔍</span>Searching &amp; Filtering</a>
+                    <a href="#managing"><span class="nav-icon">📁</span>Managing Workouts</a>
+                    <a href="#sharing"><span class="nav-icon">📤</span>Sharing &amp; Strava</a>
+                    <a href="#customizing"><span class="nav-icon">🎨</span>Customizing the Route</a>
+                    <a href="#replay"><span class="nav-icon">▶️</span>Route Replay</a>
+                    <a href="#insights"><span class="nav-icon">🤖</span>AI Insights</a>
+                    <a href="#bulk"><span class="nav-icon">✅</span>Bulk Actions</a>
+                    <a href="#settings"><span class="nav-icon">⚙️</span>Settings</a>
+                    <a href="#widgets"><span class="nav-icon">📱</span>Widgets</a>
+                </nav>
+            </aside>
 
-        <section>
-            <h2>3. Privacy</h2>
-            <p>Your use of our application is also governed by our Privacy Policy. Please review our Privacy Policy, which also governs the site and informs users of our data collection practices.</p>
-        </section>
+            <!-- Main content -->
+            <main class="support-main">
 
-        <section>
-            <h2>4. Disclaimer</h2>
-            <p>The application is provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
-        </section>
+                <!-- 1. Workout List -->
+                <section id="workout-list" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">📋</span>
+                        <h2 class="topic-title">Your Workout List</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">When you open GPX Buddy, you'll see all your workouts in a scrollable list at the bottom of the screen.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text"><strong>Tap any workout</strong> to load it on the map above.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text"><strong>Tap again</strong> on the selected workout or on the map to open the full detail view with metrics, segments, and more.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Workouts stored in iCloud show a <strong>cloud icon</strong> — tap them to download before viewing.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Swipe the sheet panel up to three different heights to give yourself more room to browse the list, or to focus on the map.</span>
+                    </div>
+                </section>
 
-        <section>
-            <h2>5. Limitations</h2>
-            <p>In no event shall we or our suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the application.</p>
-        </section>
+                <!-- 2. Importing -->
+                <section id="importing" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">❤️</span>
+                        <h2 class="topic-title">Importing Workouts from Apple Health</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Tap the <strong>+ button</strong> in the top-left corner of the screen to open the import flow.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">If this is your first time, tap <strong>Request Health Authorization</strong> and grant GPX Buddy access to your workouts.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">Use the <strong>date picker</strong> to choose how far back you want to look, and the <strong>activity type picker</strong> to filter by sport (running, cycling, hiking, etc.).</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text"><strong>Tap the map icon</strong> to preview them on the map, or <strong>tap the checkbox</strong> to select them for import.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text">Once you've made your selection, tap the <strong>Import</strong> button. You can cancel at any time while the import is running.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">6</span>
+                            <span class="step-text">Toggle <strong>Show Imported</strong> to see workouts you've already brought in (they'll show a checkmark badge).</span>
+                        </li>
+                    </ol>
+                    <div class="pro-callout">
+                        <span class="pro-callout-icon">✦</span>
+                        <span><strong>GPX Buddy Pro</strong> unlocks workouts older than 30 days. Free users can only import from the past 30 days. Upgrade in <em>Settings → Upgrade to Pro</em>.</span>
+                    </div>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Enable <strong>Auto Import</strong> in Settings to have GPX Buddy automatically pull in new workouts as you complete them — no manual steps needed!</span>
+                    </div>
+                </section>
 
-        <section>
-            <h2>6. Modifications to Service</h2>
-            <p>We reserve the right to modify or discontinue, temporarily or permanently, the application with or without notice. You agree that we shall not be liable to you or to any third party for any modification, suspension or discontinuance of the application.</p>
-        </section>
+                <!-- 3. Map View -->
+                <section id="map-view" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🗺️</span>
+                        <h2 class="topic-title">Viewing a Workout on the Map</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Tap any workout in the list — the map will zoom to fit the entire route automatically.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text"><strong>Pinch to zoom</strong> and <strong>drag to pan</strong> the map freely. Direction arrows along the route show which way you were going.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">Tap the <strong>viewfinder icon</strong> (on the right side of the map) to re-center the view on your route at any time.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Tap the <strong>location icon</strong> to show your current GPS position on the map alongside the route.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text">In the detail view, use the <strong>segment navigator</strong> (← →) to step through each segment and see it highlighted on the map.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Tap a segment in the Segments list to jump straight to it on the map and see its individual pace and stats. Long-press a segment to export it into a GPX file.</span>
+                    </div>
+                    <div class="pro-callout">
+                        <span class="pro-callout-icon">✦</span>
+                        <span><strong>GPX Buddy Pro</strong> unlocks custom segment lengths (1 km / 2 km) so you can analyze your workout in even finer detail.</span>
+                    </div>
+                </section>
 
-        <section>
-            <h2>7. Governing Law</h2>
-            <p>These terms and conditions are governed by and construed in accordance with the laws and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
-        </section>
+                <!-- 4. Search & Filter -->
+                <section id="search-filter" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🔍</span>
+                        <h2 class="topic-title">Searching &amp; Filtering Workouts</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Use the <strong>search bar</strong> at the top of the list to instantly find workouts by name, distance, or label.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Tap the <strong>filter icon</strong> next to the search bar to open the Filters panel.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">In the Filters panel you can:
+                                <ul>
+                                    <li>Set a <strong>date range</strong> to show only workouts within a period</li>
+                                    <li>Filter by one or more <strong>activity types</strong> (running, cycling, hiking…)</li>
+                                    <li>Set a <strong>distance range</strong> with the min/max sliders</li>
+                                    <li>Filter by <strong>color labels</strong> you've assigned to workouts</li>
+                                    <li>Switch between <strong>All / Favorites / Labeled</strong> modes</li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Tap <strong>Clear Filters</strong> to reset everything and see your full workout list again.</span>
+                        </li>
+                    </ol>
+                </section>
 
-        <section class="contact">
-            <h2>8. Contact Information</h2>
-            <p>If you have any questions about these Terms and Conditions, please contact us:</p>
-            <p>Email: k i s h n e l - at - g m a i l . c o m</p>
-        </section>
+                <!-- 5. Managing Workouts -->
+                <section id="managing" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">📁</span>
+                        <h2 class="topic-title">Managing Workouts</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text"><strong>Long-press</strong> any workout in the list to open a context menu with all management options.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text"><strong>Rename</strong> — Give your workout a more memorable name. A dialog appears with the current name pre-filled.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text"><strong>Favorite</strong> — Tap <em>Favorite On</em> to flag a workout so you can filter to it quickly. Tap the heart icon in the toolbar when a workout is open to toggle it too.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text"><strong>Labels</strong> — Assign a color label to tag and group workouts visually. Tap <em>Labels</em> in the context menu and pick a color.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text"><strong>Move to iCloud / Move to Device</strong> — Keep your workouts in iCloud to save local storage, or move them to your device for offline access.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">6</span>
+                            <span class="step-text"><strong>Adjust Date</strong> — Fixes the file's creation date to match the actual workout date stored in the GPX file.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">7</span>
+                            <span class="step-text"><strong>Delete</strong> — Permanently removes the workout. You'll be asked to confirm before anything is deleted.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">8</span>
+                            <span class="step-text">Alternatively, <strong>swipe left</strong> on a workout row to reveal a quick delete button.</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- 6. Sharing & Strava -->
+                <section id="sharing" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">📤</span>
+                        <h2 class="topic-title">Sharing &amp; Uploading to Strava</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text"><strong>Share a GPX file:</strong> Long-press a workout → tap <em>Share</em>. The system share sheet lets you send the file via AirDrop, Messages, email, or any other app.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text"><strong>Connect Strava:</strong> Go to <em>Settings → Social Networks</em> and tap the <strong>Strava</strong> button. Follow the sign-in steps to authorize GPX Buddy.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text"><strong>Upload a single workout:</strong> Long-press a workout → tap <em>Upload to Strava</em>. An upload panel will show progress and confirm success.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text"><strong>Disconnect Strava:</strong> Go to <em>Settings → Social Networks</em> and tap the Strava button again to log out.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Enable <strong>Auto Upload</strong> in Settings to automatically send new workouts to Strava as soon as they're imported — great for a hands-free workflow.</span>
+                    </div>
+                </section>
+
+                <!-- 7. Customizing the Route -->
+                <section id="customizing" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🎨</span>
+                        <h2 class="topic-title">Customizing the Route</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text"><strong>Change map style:</strong> Tap the <strong>map icon</strong> on the right side of the map and choose between Standard, Satellite, Hybrid, or Muted.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text"><strong>Change route color:</strong> Tap the <strong>waveform/gradient icon</strong> → select <em>None</em> for a solid color, then pick any color from the color picker. <span class="pro-badge">✦ Pro</span></span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text"><strong>Pace gradient:</strong> Tap the gradient icon → select <em>Pace</em>. The route will be colored from fast (cool tones) to slow (warm tones) so you can spot where you slowed down. <span class="pro-badge">✦ Pro</span></span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text"><strong>Elevation gradient:</strong> Select <em>Elevation</em> from the gradient menu to color the route by altitude — perfect for spotting hills and descents. <span class="pro-badge">✦ Pro</span></span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text"><strong>Heart Rate gradient:</strong> Select <em>Heart Rate</em> to visualize workout intensity along the route (requires a heart rate-enabled device). <span class="pro-badge">✦ Pro</span></span>
+                        </li>
+                        <li>
+                            <span class="step-num">6</span>
+                            <span class="step-text">You can set a <strong>default gradient and color</strong> in Settings so every workout opens with your preferred look.</span>
+                        </li>
+                    </ol>
+                    <div class="pro-callout">
+                        <span class="pro-callout-icon">✦</span>
+                        <span><strong>Route color and all gradient modes require GPX Buddy Pro.</strong> Upgrade in <em>Settings → Upgrade to Pro</em> to unlock the full palette.</span>
+                    </div>
+                </section>
+
+                <!-- 8. Replay -->
+                <section id="replay" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">▶️</span>
+                        <h2 class="topic-title">Route Replay <span class="pro-badge">✦ Pro</span></h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Open a workout's detail view by tapping it in the list.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Tap the <strong>Play button</strong> in the toolbar to start replaying your route. A dot will travel along the path, recreating your workout in real time.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">Use the <strong>speed stepper</strong> (+ / − buttons) to adjust the replay speed from 1× all the way up to 20×.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Tap the <strong>Stop button</strong> to end the replay at any time.</span>
+                        </li>
+                    </ol>
+                    <div class="pro-callout">
+                        <span class="pro-callout-icon">✦</span>
+                        <span><strong>Route Replay is a Pro feature.</strong> Upgrade in <em>Settings → Upgrade to Pro</em> to relive your workouts.</span>
+                    </div>
+                </section>
+
+                <!-- 9. AI Insights -->
+                <section id="insights" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🤖</span>
+                        <h2 class="topic-title">AI Workout Insights <span class="pro-badge">✦ Pro</span></h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Open a workout's detail view and scroll down to the <strong>Insights</strong> section.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Tap <strong>Generate Insight</strong>. GPX Buddy will analyze your pace, elevation, heart rate, and segments using AI.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">The insight appears as a short, friendly summary highlighting your performance, effort level, and interesting moments in the workout.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">To remove an insight, tap the <strong>delete icon</strong> and confirm. You can always regenerate it later.</span>
+                        </li>
+                    </ol>
+                    <div class="pro-callout">
+                        <span class="pro-callout-icon">✦</span>
+                        <span><strong>AI Insights require GPX Buddy Pro.</strong> Upgrade in <em>Settings → Upgrade to Pro</em> to get personalized analysis for every workout.</span>
+                    </div>
+                </section>
+
+                <!-- 10. Bulk Actions -->
+                <section id="bulk" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">✅</span>
+                        <h2 class="topic-title">Bulk Actions</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Tap <strong>Edit</strong> in the list toolbar to enter selection mode. Checkboxes will appear next to each workout.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Tap the checkboxes to select as many workouts as you like.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">A toolbar appears with bulk actions:
+                                <ul>
+                                    <li><strong>Labels</strong> — Apply a color label to all selected workouts</li>
+                                    <li><strong>Favorite / Unfavorite</strong> — Toggle favorites in bulk</li>
+                                    <li><strong>Download / Remove Download</strong> — Manage local vs. iCloud copies</li>
+                                    <li><strong>Share</strong> — Share all selected GPX files at once</li>
+                                    <li><strong>Upload to Strava</strong> — Batch upload to social media</li>
+                                    <li><strong>Move to Cloud / Move to Device</strong> — Reorganize storage</li>
+                                    <li><strong>Adjust Dates</strong> — Fix creation dates for all selected</li>
+                                    <li><strong>Delete</strong> — Remove all selected (with confirmation)</li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text"><strong>Merge</strong> — Select 2 or more workouts and tap Merge to combine them into a single GPX file. <span class="pro-badge">✦ Pro</span></span>
+                        </li>
+                    </ol>
+                    <div class="pro-callout">
+                        <span class="pro-callout-icon">✦</span>
+                        <span><strong>Merging workouts requires GPX Buddy Pro.</strong> All other bulk actions are available to everyone.</span>
+                    </div>
+                </section>
+
+                <!-- 11. Settings -->
+                <section id="settings" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">⚙️</span>
+                        <h2 class="topic-title">Settings &amp; Preferences</h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Tap the <strong>gear icon</strong> in the top-right corner of the workout list to open Settings.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text"><strong>Metric / Imperial</strong> — Toggle between kilometers and miles to match your preference.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text"><strong>Haptic Feedback</strong> — Turn on or off the subtle vibrations that accompany button taps.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text"><strong>Auto Import</strong> — When enabled, GPX Buddy will automatically import new workouts from Apple Health as soon as they're recorded.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">5</span>
+                            <span class="step-text"><strong>Body Weight</strong> — Enter your weight so GPX Buddy can include it in workout calculations.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">6</span>
+                            <span class="step-text"><strong>Default Map Type</strong> — Choose whether new routes open on a Standard, Satellite, or Muted map by default.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">7</span>
+                            <span class="step-text"><strong>Default Gradient</strong> — Set the default gradient mode (None, Pace, Elevation, Heart Rate) applied when you open any workout. <span class="pro-badge">✦ Pro</span></span>
+                        </li>
+                        <li>
+                            <span class="step-num">8</span>
+                            <span class="step-text"><strong>Auto Upload</strong> — Automatically push new workouts to Strava as they're imported, when you have a connected account.</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- 12. Widgets -->
+                <section id="widgets" class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">📱</span>
+                        <h2 class="topic-title">Widgets <span class="pro-badge">✦ Pro</span></h2>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <span class="step-text">Long-press your iPhone or iPad Home Screen until icons start wiggling, then tap the <strong>+</strong> button in the top-left corner.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <span class="step-text">Search for <strong>GPX Buddy</strong> in the widget gallery.</span>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <span class="step-text">Choose from three widget types:
+                                <ul>
+                                    <li><strong>Last Workout Map</strong> — A snapshot of your most recent route (small or large)</li>
+                                    <li><strong>Distance Over Time</strong> — A bar chart of recent workout distances (medium)</li>
+                                    <li><strong>Duration Over Time</strong> — A bar chart of recent workout durations (medium)</li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="step-num">4</span>
+                            <span class="step-text">Tap the widget to jump straight into GPX Buddy. Data refreshes automatically after each import.</span>
+                        </li>
+                    </ol>
+                    <div class="tip-callout">
+                        <span class="tip-callout-icon">💡</span>
+                        <span>Widgets update automatically after you import a new workout, so your Home Screen always shows your latest activity.</span>
+                    </div>
+                </section>
+
+                <!-- Contact / footer CTA -->
+                <div class="contact">
+                    <h2>Still need help?</h2>
+                    <p>We're happy to hear from you! If something isn't working as expected or you have a suggestion, drop us a message — we read every one.</p>
+                    <p>Email: <a href="mailto:kishnel@gmail.com">kishnel@gmail.com</a></p>
+                    <p>You can also review our <a href="terms.html">Terms and Conditions</a>.</p>
+                </div>
+
+            </main>
+        </div><!-- /.support-layout -->
 
         <footer>
             <p>&copy; 2026 GPX Buddy. All rights reserved.</p>
         </footer>
-    </div>
+
+    </div><!-- /.container -->
+
+    <!-- Back to top button -->
+    <a href="#" id="back-to-top" aria-label="Back to top">↑</a>
+
+    <script>
+        // Back-to-top visibility
+        const btn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            btn.classList.toggle('visible', window.scrollY > 300);
+        });
+
+        // Sidebar active link highlighting
+        const sections = document.querySelectorAll('.topic-card[id]');
+        const navLinks = document.querySelectorAll('#sidebar-nav a');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle(
+                            'active',
+                            link.getAttribute('href') === '#' + entry.target.id
+                        );
+                    });
+                }
+            });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+
+        sections.forEach(section => observer.observe(section));
+
+        // Smooth scroll for sidebar links
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Back to top smooth scroll
+        btn.addEventListener('click', e => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
